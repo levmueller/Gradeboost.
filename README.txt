@@ -7,7 +7,7 @@ GradeBoost integrates Machine Learning (a Random Forest Model) to analyze respon
 
 Prerequisites
 ------------
-- Required libraries: The required libraries for streamlit purposes are listed in the file requirements.txt. Other 
+- Required libraries: The required libraries for streamlit purposes are listed in the file requirements.txt. Other required libraries      are listed at the top of the files 'Home.py', 'Questionnaire.py' and 'Report.py'.
 - GitHub API-Key: required for certain functionalities
 
 Setup Instructions
@@ -15,8 +15,7 @@ Setup Instructions
 1. Clone the GradeBoost GitHub Repository:
   git clone https://github.com/levmueller/Gradeboost.git
   cd Gradeboost
-2. Install the required elements:
-  pip install -r requirements.txt
+2. Install the required elements using the pip install function.
 3. Configure a GitHub API-Key:
   Generate a personal access token for GitHub in order to be able to access all functions of our code.
 
