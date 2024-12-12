@@ -7,7 +7,7 @@ GradeBoost integrates Machine Learning (a Random Forest Model) to analyze respon
 
 Prerequisites
 ------------
-- Required libraries: listed in the file requirements.txt
+- Required libraries: The required libraries for streamlit purposes are listed in the file requirements.txt. Other 
 - GitHub API-Key: required for certain functionalities
 
 Setup Instructions
