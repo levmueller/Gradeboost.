@@ -548,10 +548,10 @@ if st.button("Submit"):
             message = Mail(
                 from_email='gradeboostapp@gmail.com',  #The mail is sent from our own GradeBoost email-address.
                 to_emails=email,
-                subject='Deine prognostizierte Note',
-                html_content=f'''<strong>Deine prognostizierte Note beträgt: {note}</strong>
+                subject='Your projected grade',
+                html_content=f'''<strong>Your projected grade is: {note}</strong>
                             <br><br>
-                            Danke, dass du GradeBoost🚀 nutzt!'''
+                            Thank you for using GradeBoost🚀!'''
             )
             try:
                 #The API-Key is used to create an instance of the SendGrid API.
@@ -563,9 +563,9 @@ if st.button("Submit"):
                 #If the email is sent succesfully, the following message is displayed.
                 #If the email can't be sent, an error message is displayed.
                 #(API Reference/Write and magic - Streamlit Docs)
-                st.write(f"E-Mail erfolgreich gesendet! Status Code: {response.status_code}")
+                st.write(f"email sent successfully! Status Code: {response.status_code}")
             except Exception as e:
-                st.write(f"Fehler beim Senden der E-Mail: {e}")
+                st.write(f"Error when sending the email: {e}")
         
         #The email function is called and triggers the dispatch of the email (Supported by ChatGPT)
         #(API Reference/Write and magic - Streamlit Docs)
